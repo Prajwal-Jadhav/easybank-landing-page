@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css?family=Public+Sans:300,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+}
+
+.invite-button {
+  border: 0;
+  padding: 12px 30px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  border-radius: 50px 50px;
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+}
+
+.front-page {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.front-image {
+  height: 500px;
+  background-image: url("./images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.front-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.intro {
+  padding: 0 30px;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro .heading {
+  color: hsl(233, 26%, 24%);
+  text-align: center;
+  font-size: 32px;
+}
+
+.info {
+  color: hsl(233, 8%, 62%);
+  text-align: center;
+  font-size: 14.5px;
+  line-height: 1.5em;
+}
+
+.intro div {
+  padding: 12px 0;
+}
+
+.features {
+  padding: 64px 30px;
+  background-color: hsl(220, 16%, 96%);
+}
+
+.features-top {
+  padding-bottom: 18px;
+}
+
+.features-top .info {
+  margin-top: 25px;
+}
+
+.features-body {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(inherit, auto));
+  justify-content: center;
+  grid-gap: 30px 0;
+}
+
+.feature {
+  padding: 18px 0;
+}
+
+.heading {
+  font-size: 32px;
+  text-align: center;
+  color: hsl(233, 26%, 24%);
+}
+
+.feature div {
+  display: flex;
+  justify-content: center;
+}
+
+.feature-heading {
+  color: hsl(233, 26%, 24%);
+  padding: 20px 0;
+}
+
+.articles-section {
+  padding: 80px 16px;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.articles {
+  margin-top: 35px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(315px, auto));
+  grid-gap: 35px 35px;
+}
+
+.article {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.article .article-body {
+  padding: 30px;
+}
+
+.article .article-body .article-author {
+  font-size: 14px;
+  color: hsl(233, 8%, 62%);
+}
+
+.article .article-body .article-title {
+  color: hsl(233, 26%, 24%);
+  font-size: 18px;
+  padding: 15px 0;
+}
+
+.article .article-body .article-title:hover {
+  color: hsl(136, 65%, 51%);
+}
+
+.article .article-body .article-content {
+  padding-bottom: 15px;
+  color: hsl(233, 8%, 62%);
+  line-height: 1.4em;
+}
+
+.footer {
+  background-color: hsl(233, 26%, 24%);
+  padding: 40px 0;
+}
+
+.footer .logo {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-icons {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-icons div {
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.footer-info {
+  margin: 12px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-info a {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-invite-button {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright-info {
+  color: hsl(233, 8%, 62%);
+  display: flex;
+  justify-content: center;
+}
+
+.footer .footer-logo {
+  filter: invert(220%) sepia(0%) saturate(0%) hue-rotate(75deg) brightness(206%)
+    contrast(100%);
+}
+
+@media screen and (max-width: 380px) {
+  .front-page {
+    margin-top: -100px;
+  }
+  nav {
+    position: absolute;
+    padding: 15px 15px;
+    top: 0;
+    width: 100vw;
+    background-color: white;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  nav .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav .nav-links div {
+    margin: 10px 18px;
+  }
+
+  nav .nav-links div a {
+    text-decoration: none;
+    font-size: 17px;
+    color: hsl(233, 8%, 62%);
+  }
+
+  nav .nav-links div a:hover {
+    color: hsl(233, 26%, 24%);
+  }
+}
